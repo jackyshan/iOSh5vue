@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="author" content="aaa" />
+    <title>Document</title>
+    <style type="text/css">
+        body{
+            background: red;
+        }
+        body {-webkit-touch-callout:none;/*系统默认菜单被禁用*/-webkit-user-select:none;/*webkit浏览器*/-khtml-user-select:none;/*早起浏览器*/-moz-user-select:none;/*火狐浏览器*/-ms-user-select:none;/*IE浏览器*/user-select:none;/*用户是否能够选中文本*/}
+    </style>
+</head>
+<body>
+
+    <div id="div">
+        <input type="text" v-model='name'><span v-show="name">你的名字是{{name}}</span>
+        <img src="images/qrcode.png">
+    </div>
+
+    <script src="js/vue.js"></script>
+    <script>
+        var App = new Vue({
+            el:'#div',
+            data:{
+                name:''
+            }
+        })
+    </script>
+     
+</body>
+</html>

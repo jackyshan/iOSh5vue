@@ -1,0 +1,150 @@
+html body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 100%;
+}
+
+.head{
+    display: flex;
+    flex-direction: column;
+}
+
+.bghead{
+    background-color: #22D288;
+    height: 128px;
+    display: flex;
+    flex-direction: row;
+}
+
+.bghead .jianpailicheng{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bghead .jianpailicheng .centercontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.bghead .jianpailicheng .centercontent .bignum{
+    color: white;
+    font-size: 32px;
+}
+
+.bghead .jianpailicheng .centercontent .smallnum{
+    color: white;
+    font-size: 12px;
+}
+
+.head .lichengnum{
+    margin: -30px 15px 0 15px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.head .lichengnum .lichengblock{
+    flex:1;
+    text-align: center;
+    padding: 10px 0 0 0;
+}
+
+.head .lichengnum .lichengblock .num{
+    color: #333333;
+    font-size: 15px;
+}
+
+.head .lichengnum .lichengblock .desc{
+    margin-top: 5px;
+    color: #888888;
+    font-size: 12px;
+}
+
+.head .lichengduihuan{
+    background-color: #fff;
+    height: 40px;
+    margin: 16px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.head .lichengduihuan .line{
+    margin: 10px 0 10px 15px;
+    width: 3px;
+    background-color: #22D288;
+    border-radius: 3px;
+}
+
+.head .lichengduihuan .monthduihuan{
+    color: #22D288;
+    font-size: 15px;
+    margin-left: 6px;
+    line-height: 40px;
+    flex: 1;
+}
+
+.head .lichengduihuan .duihuanjilu{
+    display: flex;
+    align-items: center;
+    line-height: 40px;
+    padding: 0 15px;
+}
+
+.head .lichengduihuan .duihuanjilu .dhjllabel{
+    color: #888888;
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+}
+
+.list .row{
+    height: 110px;
+    background-color: #f2f2f2;
+}
+
+.list .row .rowcell{
+    margin: 0 15px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.list .row .rowcell .content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.list .row .rowcell .content .duihuanbtn{
+    background-color: #22D288;
+    font-size: 14px;
+    border-radius: 4px;
+    width: 80px;
+    height: 28px;
+    line-height: 28px;
+    color: white;
+    text-align: center;
+}
